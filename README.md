@@ -4,12 +4,17 @@ A JupyterLab extension for rendering mp4 files.
 
 ## Prerequisites
 
-* JupyterLab
+- JupyterLab
 
 ## Installation
 
 ```bash
-jupyter labextension install @jupyterlab/mp4-extension
+# if/when published
+pip install jupyterlab_mp4
+
+# else git clone repo and install locally from repo root folder
+jlpm run build:prod
+pip install .
 ```
 
 ## Development
@@ -27,4 +32,3 @@ To rebuild the package and the JupyterLab app:
 npm run build
 jupyter lab build
 ```
-
